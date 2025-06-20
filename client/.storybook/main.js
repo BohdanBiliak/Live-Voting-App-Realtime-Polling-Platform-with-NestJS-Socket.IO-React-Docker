@@ -6,10 +6,6 @@ module.exports = {
     builder: 'storybook-builder-vite',
   },
   viteFinal: async (config, { configType }) => {
-    // config is storybook's vite config
-    // config type is 'DEVELOPMENT'
-
-    // configure camelCase CSS Modules
     return {
       ...config,
       css: {
